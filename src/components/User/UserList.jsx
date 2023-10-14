@@ -1,11 +1,19 @@
 import "./User.css";
-import Users from "./MocUsers.js";
+import users from "./MocUsers.js";
 import User from "./User";
 
 export default function UserList(props) {
     return (
         <ul className="users-list">
-            <User Username="Pablo" Picture="./img/Pablo Fernandez.jpg" />
+            {users.map(user => {
+                return (
+                    <User
+                        UserName={user["Display name"]}
+                        Title={user.Title}
+                        Picture={user["Display name"] + ".jpg"}
+                    />
+                );
+            })}
         </ul>
     );
 }

@@ -408,3 +408,4 @@ const users = [
         "When created": "2020-05-23 19:59:10Z"
     }
 ];
+export default users;
