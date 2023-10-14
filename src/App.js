@@ -1,13 +1,13 @@
-//import logo from './logo.svg';
-import User from './componets/User/User';
+import User from "./components/User/User"
 import './App.css';
+//import UserList from './components/User/UserList';
+
 
 function App() {
-  const msg = "Soy Gabriela";
   return (
-    <div className="App-header">
-      <h1>Hola Mundo: {msg}</h1>
-      <User Nombre="Veronica" />
+    <div >
+      <User UserName="Pablo" Picture="./img/Pablo Fernandez.jpg" Title="Ingeniero" />
+      <User UserName="Lee" Picture="./img/Lee Gu.jpg" Title="Licenciado" />
     </div>
   );
 }
