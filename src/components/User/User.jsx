@@ -13,7 +13,7 @@ const User = (props) => {
             <div className='card user-item__content'>
                 <a href="#">
                     <div className='user-item__image avatar'>
-                        <img src={"./img/" + props.Picture} />
+                        <img src={props.Picture} />
                     </div>
                     <div className='user-item__info'>
                         <h2>{props.UserName}</h2>
