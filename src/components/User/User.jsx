@@ -1,5 +1,7 @@
 import './User.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 const User = (props) => {
     const [contador, setContador] = useState(0);
 
@@ -11,7 +13,7 @@ const User = (props) => {
     return (
         <li className='user-item' onClick={HandlerClick_User}>
             <div className='card user-item__content'>
-                <a href="#">
+                <Link to={`/users/${props.Id}`}>
                     <div className='user-item__image avatar'>
                         <img src={props.Picture} />
                     </div>
@@ -20,7 +22,7 @@ const User = (props) => {
                         <h3>{props.Title}</h3>
                         <h3>{contador}</h3>
                     </div>
-                </a>
+                </Link>
             </div>
 
 

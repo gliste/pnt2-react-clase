@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import UserList from "./UserList";
+
 
 const UserPage = (props) => {
     const [users, setUsers] = useState([]);
@@ -16,7 +17,7 @@ const UserPage = (props) => {
 
     return (
         <div>
-
+            <UserList Users={users} />
         </div>
     )
 }
